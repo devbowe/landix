@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge; text/html">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta name="description" content="Sua Empresa tem um Trade Marketing Eficiente? Faça o Quiz Gratuito e Receba o Diagnóstico Personalizado Em Tempo Real. Clique aqui.">
+  		<meta name="keywords" content="trade marketing, landix">	
+		
+		<title>Diagnóstico de Trade Marketing Gratuito | Landix</title>
+		
+		<!-- Favicon -->
+        <link rel="shortcut icon" href="assets/ico/favicon.jpg">
+
+        <!-- FONTES -->
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+
+		<!-- ESTILOS -->
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<!-- OUTROS -->
+		<link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+		<link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+		<link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />	 
+    </head>
+    <body>	
+		<!-- ETAPA INTRO -->
+		<section class="intro" id="quiz-intro">
+			<div class="e01-01apresentacao">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-9 col-md-9">
+							<div class="logo" data-aos="zoom-in" data-aos-duration="1000" class="aos-init aos-animate">
+								<a href="https://www.landix.com.br/" target="_blank">
+									<img src="assets/img/logo-dexer.webp"/>
+								</a>
+							</div>
+							<h1>Quiz</h1>
+							<h2>
+								Diagnóstico de Trade Marketing:
+								sua empresa é eficiente <b>de verdade</b>?
+							</h2>
+							<h3>
+								Veja agora com o diagnóstico.
+							</h3>
+							<div class="button">
+								<a id="introparae01" class="style01">Vamos lá!</a>
+							</div>
+
+							<div class="landix">
+								<a href="https://www.landix.com.br/" target="_blank">
+									<img src="assets/img/logo-landix.webp"/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="imagem-intro">
+					<img src="assets/img/quiz-etapa01.webp"/>
+				</div>
+			</div>
+		</section>
+		<!-- FIM DA ETAPA INTRO -->
+
+		<!-- ETAPA 01 -->
+		<section class="quiz01" id="quiz-etapa01">
+			<div class="logo-dexer">
+				<img src="assets/img/logo-dexer-colorida.webp"/>
+			</div>
+			<div class="logo-landix">
+				<img src="assets/img/logo-landix-colorida.webp"/>
+			</div>
+			<div class="e01-01apresentacao">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-12">
+							<div class="caixa">
+								<div class="section">
+									<h4>Quiz</h4>
+								</div>
+								<hr>
+								<!-- QUESTÃO 01 - NOME -->
+								<div class="question question01" id="e01q01">
+									<h4>
+										Primeiramente, qual é o seu nome?
+									</h4>
+									<input type="text" name="nome" id="nome" required="required" placeholder="Nome completo"/>
+									<input name="utm_source" id="utm_source" type="hidden">
+									<input name="utm_medium" id="utm_medium" type="hidden">
+									<input name="utm_campaign" id="utm_campaign" type="hidden">
+									<div class="buttons">
+										<a class="quizvoltar" id="e01paraintro">Voltar</a>
+										<a class="quizproximo" id="q01paraq02">Avançar</a>
+									</div>
+								</div>
+	
+								<!-- QUESTÃO 02 - EMAIL -->
+								<div class="question question02" id="e01q02">
+									<h4>
+										<span class="nome"></span>, e o seu e-mail corporativo?
+									</h4>
+									<input type="text" name="email" id="email" required="required" placeholder="E-mail"/>
+									<div class="buttons">
+										<a class="quizvoltar" id="q02paraq01">Voltar</a>
+										<a class="quizproximo" id="q02paraq03">Avançar</a>
+									</div>
+								</div>
+	
+								<!-- QUESTÃO 03 - CELULAR COM DDD -->
+								<div class="question question03" id="e01q03">
+									<h4>
+										E o número do seu celular (com DDD)?
+									</h4>
+									<input type="text" name="celular" id="celular" required="required" placeholder="(00) 00000-0000"/>
+									<div class="buttons">
+										<a class="quizvoltar" id="q03paraq02">Voltar</a>
+										<a class="quizproximo" id="q03paraq04">Avançar</a>
+									</div>
+								</div>
+	
+								<!-- QUESTÃO 04 - SETOR DE ATUAÇÃO -->
+								<div class="question question04" id="e01q04">
+									<h4>
+										Qual é o seu setor de atuação?
+									</h4>
+									<select name="setor_atuacao" id="setor_atuacao" required>
+										<option value="nulo">Selecionar</option>
+										<option value="Administrativo">Administrativo</option>
+										<option value="Compras">Compras</option>
+										<option value="Marketing">Marketing</option>
+										<option value="Financeiro">Financeiro</option>
+										<option value="Recursos Humanos">Recursos Humanos</option>
+										<option value="Tecnologia da Informação">Tecnologia da Informação</option>
+										<option value="Vendas">Vendas</option>
+										<option value="Outros">Outros</option>
+									</select>
+									<div class="buttons">
+										<a class="quizvoltar" id="q04paraq03">Voltar</a>
+										<a class="quizproximo" id="q04paraq05">Avançar</a>
+									</div>
+								</div>
+	
+								<!-- QUESTÃO 05 - FUNCIONÁRIOS -->
+								<div class="question question05" id="e01q05">
+									<h4>
+										Quantos funcionários a empresa possui?
+									</h4>
+									<select name="funcionarios" id="funcionarios" required>
+										<option value="nulo">Selecionar </option>
+										<option value="1 a 9">1 a 9</option>
+										<option value="10 a 19">10 a 19</option>
+										<option value="20 a 49">20 a 49</option>
+										<option value="50 a 99">50 a 99</option>
+										<option value="100 a 249 ">100 a 249 </option>
+										<option value="250 a 499">250 a 499</option>
+										<option value="500 a 999">500 a 999</option>
+										<option value="1000+">1000+</option>
+									</select>
+									<div class="buttons">
+										<a class="quizvoltar" id="q05paraq04">Voltar</a>
+										<a class="quizproximo" id="q05paraq06">Avançar</a>
+									</div>
+								</div>
+	
+								<!-- QUESTÃO 06 - CARGO -->
+								<div class="question question06" id="e01q06">
+									<h4>
+										<span class="nome"></span>, qual o seu cargo atual?
+									</h4>
+									<select name="cargo" id="cargo" required>
+										<option value="nulo">Selecionar</option>
+										<option value="Proprietário/Sócio">Proprietário/Sócio</option>
+										<option value="Diretor">Diretor</option>
+										<option value="Gerente">Gerente</option>
+										<option value="Coordenador">Coordenador</option>
+										<option value="Analista">Analista</option>
+										<option value="Assistente">Assistente</option>
+										<option value="Estagiário">Estagiário</option>
+									</select>
+									<div class="lgpd">
+										<div id="checkbox-lgpd">
+											<input type="checkbox" name="checkbox" id="subscribeCheckbox" required="required">
+											<label for="subscribeCheckbox" 
+											style="font-size: 14px;font-weight: normal;font-stretch: normal;font-style: normal;line-height: 1.3;letter-spacing: 0.38px;text-align: left;"> 
+												Estou ciente e concordo que esses dados sejam utilizados 
+												para envio de ofertas e conteúdos personalizados de acordo 
+												com os meus interesses. A qualquer momento posso voltar 
+												atrás nessa decisão*. 
+											</label>
+											<div style="position: relative; top: 25px;"class="output outputaceitouTermos"></div>
+										</div>
+									</div>
+									<div class="buttons">
+										<a class="quizvoltar" id="q06paraq05">Voltar</a>
+										<a class="quizproximo" id="q06paraetapa02">Avançar</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FIM DA ETAPA 01-->
+
+		<!-- ETAPA 02 -->
+		<section class="quiz02" id="quiz-etapa02">
+			<div class="logo-dexer">
+				<img src="assets/img/logo-dexer-colorida.webp"/>
+			</div>
+			<div class="logo-landix">
+				<img src="assets/img/logo-landix-colorida.webp"/>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-12">
+						<div class="caixatransparente">
+							<h4>
+								Recebi suas informações, <span class="nome"></span>.
+							</h4>
+							<p>
+								Precisamos entender melhor o cenário atual… Vamos começar?
+							</p>
+							<div class="button center">
+								<a id="etapa02para03" class="quizproximo">Começar</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FIM DA ETAPA 02 -->
+
+		<!-- ETAPA 03 -->
+		<section class="quiz03" id="quiz-etapa03">
+			<div class="logo-dexer">
+				<img src="assets/img/logo-dexer-colorida.webp"/>
+			</div>
+			<div class="logo-landix">
+				<img src="assets/img/logo-landix-colorida.webp"/>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-7 mx-auto">
+						<div class="caixa">
+							<div class="section">
+								<h4>Quiz</h4>
+							</div>
+							<hr>
+							<div class="question questao01" id="e01q01">
+								<h2>
+									<span class="nome"></span>, você acompanha a sua equipe de Trade Marketing em tempo real?
+								</h2>
+								<div class="radio">
+									<div class="radio">
+										<input type="radio" name="questaointro" id="questaointro-sim" value="Sim">
+										<label for="questaointro">Sim</label>
+									</div>
+									<div class="radio">
+										<input type="radio" name="questaointro" id="questaointro-nao" value="Não">
+										<label for="questaointro">Não</label>
+									</div>
+								</div>
+								<div class="buttons">
+									<a class="quizvoltar" id="etapa03paraetapa02">Voltar</a>
+									<a class="quizproximo" id="etapa03resposta">Avançar</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FIM DA ETAPA 03 -->
+
+		<!-- ETAPA INTRO NÃO -->
+		<section class="intronao" id="quiz-etapaintro">
+			<div class="logo-dexer">
+				<img src="assets/img/logo-dexer-colorida.webp"/>
+			</div>
+			<div class="logo-landix">
+				<img src="assets/img/logo-landix-colorida.webp"/>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-12 mx-auto">
+						<div class="caixatransparente">
+							<div class="quiz">
+							<!-- RESPOSTA NÃO -->
+								<div class="question intro" id="intro-nao">
+									<h2>
+										É compreensível, <span class="nome"></span>
+									</h2>
+									<p>
+										Nem sempre é uma tarefa fácil acompanhar o time de Trade Marketing.
+										Para oferecer o melhor diagnóstico, queremos entender um pouquinho 
+										mais sobre o seu negócio. Posso contar com você?
+									</p>
+									<div class="button center">
+										<a class="quizproximo" id="intronaoparaetapa04">Continuar quiz</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FIM DA ETAPA INTRO NÃO -->
+
+		<!-- ETAPA 04 -->
+		<section class="quiz03" id="quiz-etapa04">
+			<div class="logo-dexer">
+				<img src="assets/img/logo-dexer-colorida.webp"/>
+			</div>
+			<div class="logo-landix">
+				<img src="assets/img/logo-landix-colorida.webp"/>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-8 mx-auto">
+						<div class="caixa">
+							<div class="section">
+								<h4>Quiz</h4>
+							</div>
+							<hr>
+							<div class="quiz">
+								<!-- QUIZ - QUESTÃO 01 -->
+								<div class="questao" id="questao01">
+									<h2>
+										Que bom, <span class="nome"></span>.<br/>
+										Se você faz o acompanhamento em tempo real, com certeza, 
+										consegue economizar recursos com trajeto e oferecer mais 
+										qualidade de vida para seus colaboradores. Mas, eles estão 
+										utilizando a tecnologia da melhor maneira?
+									</h2>
+									<div class="options">
+										<div class="radio">
+											<input type="radio" name="questao01" id="questao01-a" value="Sim, acredito que todos utilizam" >
+											<label for="questao01">Sim, acredito que todos utilizam;</label>
+										</div>
+										<div class="radio">
+											<input type="radio" name="questao01" id="questao01-b" value="Alguns utilizam" >
+											<label for="questao01">Alguns utilizam;</label>
+										</div>
+										<div class="radio">
+											<input type="radio" name="questao01" id="questao01-c" value="Nenhum utiliza" >
+											<label for="questao01">Nenhum utiliza.</label>
+										</div>
+									</div>
+									<div class="button center">
+										<a class="quizproximo" id="quiz01p02">Avançar</a>
+									</div>
+								</div>
+
+								<!-- QUIZ - QUESTÃO 02 -->
+								<div class="questao" id="questao02">
+									<h2>
+										Os gestores têm ferramentas para cadastrar atividades 
+										e acompanhar a rotina da equipe de Trade Marketing?
+									</h2>
+									<div class="options">
+										<div class="radio">
+											<input type="radio" name="questao02" id="questao02-a" value="Sim, os gestores utilizam ferramentas perfeitas" >
+											<label for="questao02">Sim, os gestores utilizam ferramentas perfeitas; </label>
+										</div>
+										<div class="radio">
+											<input type="radio" name="questao02" id="questao02-b" value="Não sei se os gestores utilizam" >
+											<label for="questao02">Não sei se os gestores utilizam;</label>
+										</div>
+										<div class="radio">
+											<input type="radio" name="questao02" id="questao02-c" value="Minha empresa não faz uso desses recursos" >
+											<label for="questao02">Minha empresa não faz uso desses recursos.</label>
+										</div>
+										<div class="button center">
+											<a class="quizproximo" id="quiz02p03">Avançar</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- QUIZ - QUESTÃO 03 -->
+								<div class="questao" id="questao03">
+									<h2>
+										<span class="nome"></span>, a sua empresa toma decisões baseadas em dados?
+									</h2>
+									<div class="options">
+										<div class="radio">
+											<input type="radio" name="questao03" id="questao03-a" value="Sim, utilizamos dados para tomar decisões" >
+											<label for="questao03">Sim, utilizamos dados para tomar decisões;</label>
+										</div>
+										<div class="radio">
+											<input type="radio" name="questao03" id="questao03-b" value="Não utilizamos dados para aumentar vendas" >
+											<label for="questao03">Não utilizamos dados para aumentar vendas;</label>
+										</div>
+										<div class="button center">
+											<a class="quizproximo" id="quiz03p04">Avançar</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- QUIZ - QUESTÃO 04 -->
+								<div class="questao" id="questao04">
+									<h2>
+										O Time de Trade acessa dados off-line e informações 
+										de onde estiver?
+									</h2>
+									<div class="options">
+										<div class="radio">
+											<input type="radio" name="questao04" id="questao04-a" value="Sim, gerenciamos todos atendimentos por meio de planilhas e listas" >
+											<label for="questao04">Sim, gerenciamos todos atendimentos por meio de planilhas e listas;</label>
+										</div>
+										<div class="radio">
+											<input type="radio" name="questao04" id="questao04-b" value="Não, não tem como saber a quantidade de atendimentos realizados nem outros dados" >
+											<label for="questao04">Não, não tem como saber a quantidade de atendimentos realizados nem outros dados.</label>
+										</div>
+										<div class="button center">
+											<a class="quizproximo" id="quiz04p05">Avançar</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- QUIZ - QUESTÃO 05 -->
+								<div class="questao" id="questao05">
+									<h2>
+										Entendi, <span class="nome"></span>. 
+										Agora mais uma pergunta: a sua empresa perde tempo com 
+										tarefas repetitivas?
+									</h2>
+									<div class="options">
+										<div class="radio">
+											<input type="radio" name="questao05" id="questao05-a" value="Sim, as mesmas tarefas são feitas várias vezes" >
+											<label for="questao05">Sim, as mesmas tarefas são feitas várias vezes;</label>
+										</div>
+										<div class="radio">
+											<input type="radio" name="questao05" id="questao05-b" value="Não, somos eficientes neste sentido" >
+											<label for="questao05">Não, somos eficientes neste sentido.</label>
+										</div>
+										<div class="button center">
+											<a class="quizproximo" id="quiz05p06">Avançar</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- QUIZ - QUESTÃO 06 -->
+								<div class="questao" id="questao06">
+									<h2>
+										Certo <span class="nome"></span>. Você já presenciou 
+										dificuldades ou impedimentos da equipe de Trade Marketing 
+										com relação às vendas?
+									</h2>
+									<div class="options">
+										<div class="radio">
+											<input type="radio" name="questao06" id="questao06-a" value="Sim, já presenciei" >
+											<label for="questao06">Sim, já presenciei;</label>
+										</div>
+										<div class="radio">
+											<input type="radio" name="questao06" id="questao06-b" value="Não, nunca presenciei" >
+											<label for="questao06">Não, nunca presenciei.</label>
+										</div>
+										<div class="button center">
+											<a class="quizproximo" id="quiz06p07">Avançar</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- QUIZ - QUESTÃO 07 -->
+								<div class="questao" id="questao07">
+									<h2>
+										Anotado, <span class="nome"></span>. 
+										A empresa utiliza algum software de gestão de equipes externas? 
+									</h2>
+									<div class="options">
+										<div class="radio">
+											<input type="radio" name="questao07" id="questao07-a" value="Sim, já utilizamos" >
+											<label for="questao07">Sim, já utilizamos;</label>
+										</div>
+										<div class="radio">
+											<input type="radio" name="questao07" id="questao07-b" value="Não, ainda não temos" >
+											<label for="questao07">Não, ainda não temos.</label>
+										</div>
+										<div class="button center">
+											<a class="quizproximo" id="quiz07etapafinal">Avançar</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FIM DA ETAPA 03 -->
+		
+
+		<!-- INTEGRAÇÃO RD STATION -->
+		<script type ='text/javascript' src="https://d335luupugsy2.cloudfront.net/js/integration/stable/rd-js-integration.min.js"></script>
+		<script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/bde78ace-9324-48be-aa16-cb0211ca879b-loader.js" ></script>
+
+		<!-- Javascript -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+		<script src="assets/js/sweetalert2.js"></script>
+		<script src="assets/js/mask.js"></script>
+		<script src="assets/js/scripts.js"></script>
+		
+		<script>
+			AOS.init({
+				disable: function() {
+					var maxWidth = 800;
+					return window.innerWidth < maxWidth;
+				}
+			});   
+			
+			$(document).ready(function() {
+                function getUrlParamByName(name, url) {
+                    if (!url) url = window.location.href;
+                
+                    name = name.replace(/[\[\]]/g, '\\$&');
+                    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+                    var results = regex.exec(url);
+                
+                    if (!results) return null;
+                    if (!results[2]) return '';
+                
+                    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+                    }
+
+                $('#utm_source').val(getUrlParamByName('utm_source'));
+                $('#utm_medium').val(getUrlParamByName('utm_medium'));
+                $('#utm_campaign').val(getUrlParamByName('utm_campaign'));
+            });
+		</script>
+    </body>
+
+</html>

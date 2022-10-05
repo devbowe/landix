@@ -1,0 +1,1462 @@
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+html{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	overflow: hidden;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+.mobile{
+	display: none;
+}
+
+.desktop{
+	display: block;
+}
+
+.loader{
+	display: none;
+}
+
+:root {
+	--marrom: #631804;
+	--amarelo: #ffba00;
+	--azul: #59e7fe;
+	--branco: #ffffff;
+	--roxo: #784aa7;
+	--cinza: #3b3b3b;
+	--cinza-escuro: #464646;
+	--cinza-medio: #656565;
+	--cinza-claro: #a3a3a3;
+	--laranja: #ff6a00;
+}
+
+@font-face {
+	font-family: "Mr Eaves XL Thin";
+	src: url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Thin.woff") format("woff"), 
+	url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Thin.ttf"), 
+	url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Thin.ttf") format("truetype"); 
+}
+
+@font-face {
+	font-family: "Mr Eaves XL Light";
+	src: url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Light.woff") format("woff"), 
+	url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Light.ttf"), 
+	url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Light.ttf") format("truetype"); 
+}
+
+@font-face {
+	font-family: "Mr Eaves XL Regular";
+	src: url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Reg.woff") format("woff"), 
+	url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Reg.ttf"), 
+	url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Reg.ttf") format("truetype"); 
+}
+
+@font-face {
+	font-family: "Mr Eaves XL Book";
+	src: url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Book.woff") format("woff"), 
+	url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Book.ttf"), 
+	url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Book.ttf") format("truetype"); 
+}
+
+@font-face {
+	font-family: "Mr Eaves XL Bold";
+	src: url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Bold.woff") format("woff"), 
+	url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Bold.ttf"), 
+	url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Bold.ttf") format("truetype"); 
+}
+
+@font-face {
+	font-family: "Mr Eaves XL Ultra";
+	src: url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Ultra.ttf"), /* IE9*/
+	url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Ultra.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face {
+	font-family: "MrEavesXLMondOT Heavy";
+	src: url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Heavy.woff") format("woff"), 
+	url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Heavy.ttf"), 
+	url("../fontes/MrEavesXLMondOT/MrEavesXLModOT-Heavy.ttf") format("truetype"); 
+}
+
+b{
+	font-family: 'Mr Eaves XL Bold', sans-serif;
+}
+
+section.intro{
+	padding: 70px 0;
+	background: var(--marrom) url(../img/fundo-etapa01.webp) no-repeat;
+	background-size: cover;    
+	text-align: left;
+	min-height: 100vh;
+}
+
+section.intro .e01-01apresentacao{
+	position: relative;
+}
+
+section.intro .e01-01apresentacao .imagem-intro {
+    position: absolute;
+    right: 50px;
+    top: -125px;
+}
+
+section.intro .logo{
+	margin-bottom: 100px;
+}
+
+
+section.intro h1{
+	font-family: 'Mr Eaves XL Bold', sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 0.56;
+	letter-spacing: normal;
+	text-align: left;
+	color: var(--laranja);
+	margin-bottom: 31px;
+}
+
+section.intro h2{
+	font-family: "Mr Eaves XL Regular", sans-serif;
+	font-size: 50px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+	margin-bottom: 38px;
+}
+
+section.intro h3{
+	font-family: "Mr Eaves XL Regular", sans-serif;
+	font-size: 35px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 0.91;
+	letter-spacing: normal;
+	text-align: left;
+	color: var(--branco);
+	margin-bottom: 30px;
+}
+
+section.intro .landix {
+    margin: 150px 0 100px 0;
+}
+
+section.intro div.section,
+section.quiz02 div.section{
+	text-align: center;
+    margin: 0 auto 37px auto;
+    width: 130px;
+    height: auto;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 7px 10px;
+}
+
+section.quiz01 div.section,
+section.quiz03 div.section{
+	text-align: center;
+	margin: 0 auto 40px auto;
+	width: 130px;
+	height: 39px;
+	border-radius: 5px;
+	padding: 6px 10px;
+}
+
+section.intro div.section h4,
+section.quiz01 div.section h4,
+section.quiz02 div.section h4,
+section.quiz03 div.section h4{
+	font-family: 'Mr Eaves XL Bold', sans-serif;
+	font-size: 45px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ff6000;
+}
+
+section.intro p{
+	font-family: 'Effra Regular', sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: #7e7e7e;
+	margin: 0 auto 50px auto;
+	width: 90%;
+}
+
+section.intro .button{
+	text-align: left;
+}
+
+a.style01{
+	height: 50px;
+	border-radius: 25px;
+	background-color: var(--laranja);
+	font-size: 18px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	font-family: 'Mr Eaves XL Regular', sans-serif;
+	line-height: 1.4;
+	letter-spacing: 0.72px;
+	text-align: left;
+	color: #ffffff !important;
+	cursor: pointer;
+	padding: 14px 80px;
+	text-decoration: none;
+	transition-duration: .3s;
+	z-index: 1;
+}
+
+a.style01:hover{
+	color: var(--laranja) !important;
+	background-color: var(--branco);
+}
+
+a.style01:hover, a.style02:hover, a.style03:hover {
+    transform: scale(1.05);
+}
+
+/* TELA QUIZ 01 */
+
+section.quiz01,
+section.quiz02,
+section.quiz03,
+section.quiz04 {
+    padding: 50px 0;
+	text-align: center;
+	background: #f2f3f6 url(../img/quiz-etapa01-fundo.png) 0% 0% no-repeat padding-box;
+    background-size: contain;
+	height: 100vh;
+	position: relative;
+}
+
+section .logo-dexer,
+section .logo-landix  {
+    width: fit-content;
+    bottom: 30px;
+    position: absolute;
+	z-index: 1;
+}
+
+section .logo-dexer img,
+section .logo-landix img{
+	width: 75%;
+}
+
+section .logo-dexer {
+	left: 100px;
+}
+
+section .logo-landix {
+	right: 100px;
+}
+
+.caixa {
+    padding: 40px 80px 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 18px 0 rgb(0 0 0 / 5%);
+    background-color: #ffffff;
+    margin: 150px auto;
+    width: fit-content;
+}
+
+.caixatransparente {
+    margin: 300px 0;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1600px){
+	.caixa{
+		margin: 65px auto;
+	}
+
+	section.intro div.section h4,
+	section.quiz01 div.section h4,
+	section.quiz02 div.section h4,
+	section.quiz03 div.section h4{
+		font-size: 30px !important;
+	}
+}
+
+
+
+section.section01{
+	padding: 50px 0 120px 0;
+}
+
+.question{
+	margin: 60px ​auto 0 auto;
+}
+
+.question .buttons{
+	position: relative;
+	min-height: 50px;
+	margin: 35px auto 0;
+}
+
+.question .buttons a,
+.button a,
+section.quiz03 .buttons a{
+	padding: 10px 70px;
+  	border-radius: 30px;
+	color: var(--branco) !important;
+	font-family: "Mr Eaves XL Regular", sans-serif;
+	font-size: 28px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.29;
+	letter-spacing: normal;
+	text-align: center;
+	text-decoration: none;
+	transition-duration: .3s;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.question .buttons a.quizvoltar,
+section.quiz03 a.quizvoltar{
+	background-color: #314267;
+	position: absolute;
+	left: 0;
+}
+
+.question .buttons a.quizproximo{
+	background-color: #ff6000;
+	position: absolute;
+	right: 0;
+}
+
+.button.center a.quizproximo{
+	background-color: #ff6000;
+	text-align: center;
+}
+
+.question .buttons a:hover,
+.button a:hover,
+.button.center a.quizproximo:hover{
+	background-color: #c1c6d1;
+}
+
+.question h4{
+	font-family: 'Mr Eaves XL Regular';
+	font-size: 35px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: center;
+	color: #314267;
+	margin: 60px auto 30px;
+}
+
+.question input, .question select {
+    width: 520px;
+    min-height: 60px;
+    transition-duration: .3s;
+    font-family: 'Mr Eaves XL Regular', sans-serif;
+    font-size: 28px;
+    border: 1px solid #eff0f3;
+    color: #7e7e7e;
+    padding: 0px 30px;
+    border-radius: 30px;
+    background-color: #eff0f3;
+}
+
+.question select {
+    background-image: url(../img/select.svg);
+    background-repeat: no-repeat;
+    background-size: 19px;
+    background-position: 94% center;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	outline: none;
+}
+
+.question select:focus {
+	outline: none;
+	border-color: transparent;
+}
+
+.question input:focus {
+	outline: none;
+	border-color: #ff6a00;
+}
+
+.question .buttons a:hover img,
+section.quiz03 .quiz .buttons a:hover img{
+	opacity: 0.5;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+span.nome{
+	text-transform: capitalize;
+}
+
+
+
+/* QUIZ TELA 02 */
+
+section.quiz02 h4,
+section.intro h4{
+	font-family: 'Mr Eaves XL Bold', sans-serif;
+	font-size: 45px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: center;
+  	color: #ff6000;
+	margin: 0 auto 40px auto;
+}
+
+section.quiz02 h2,
+section.quiz02 p,
+section.intro p{
+	width: 65%;
+}
+
+section.quiz02 h2,
+section.quiz03 h2,
+section.quiz02 p,
+section.intro p{
+	font-family: 'Mr Eaves XL Regular', sans-serif;
+	font-size: 35px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: center;
+	color: #314267;
+    margin: 0 auto 70px auto;
+}
+
+section.quiz03,
+section.intronao {
+    padding: 50px 0;
+	text-align: center;
+	background: #f2f3f6 url(../img/quiz-etapa01-fundo.png) 0% 0% no-repeat padding-box;
+    background-size: contain;
+	height: 100vh;
+	position: relative;
+}
+
+/* QUIS TELA INTRO - PERGUNTAS */
+
+section.intronao{
+	padding: 70px 0;
+	background: #f2f3f6 url(../img/quiz-etapa01-fundo.png) 0% 0% no-repeat padding-box;
+	background-size: contain;    
+	height: 100vh;
+	position: relative;
+}
+
+section.intronao h2{
+	font-family: 'Mr Eaves XL Bold', sans-serif;
+	font-size: 45px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ff6000;
+	margin-bottom: 54px;
+}
+
+section.intronao p{
+	font-family: 'Mr Eaves XL Regular', sans-serif;
+	font-size: 35px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: center;
+	color: #314267;
+	width: 95%;
+    margin: 0 auto;
+}
+
+section.intronao .button{
+	margin: 70px auto 0;
+}
+
+
+/* QUIZ TELA 03 */
+
+section.quiz03 h2{
+	margin: 60px auto 40px;
+}
+
+section.quiz03 .caixa {
+    padding: 40px 50px 60px;
+}
+
+section.quiz03 .radio {
+    text-align: left;
+    padding: 0;
+}
+
+section.quiz03 .quiz .button.center {
+    margin-top: 60px;
+    position: relative;
+    min-height: 56px;
+	text-align: center;
+}
+
+section.quiz03 a.quizproximo{
+	background-color: #ff6000;
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+
+
+
+
+
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+    position: absolute;
+    z-index: 999999;
+    opacity: 0;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+}
+
+.radio input, .radio select {
+    width: 80%;
+    border-radius: 30px;
+    background-color: #f4f4f4;
+    border: none;
+    font-family: lato,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    text-align-last: center;
+    line-height: 2.78;
+    letter-spacing: normal;
+    text-align: center;
+    color: #626262;
+    margin-bottom: 10px;
+}
+
+.radio select {
+    height: 60px;
+}
+
+.radio input {
+    height: 35px;
+}
+
+.radio{
+	text-align: left;
+	padding: 10px 0;
+}
+
+.radio select{
+	background: url(../img/select.svg) 3px 5px no-repeat;
+	background-size: 16px;
+}
+
+.radio label{
+	display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 40px;
+    font-family: 'Mr Eaves XL Regular', sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    background: url(../img/radio.svg) 3px 5px no-repeat;
+    background-size: 20px;
+}
+
+input:active+label, input:checked+label {
+	background: url(../img/radioselect.svg) -23px -27px no-repeat;
+    background-size: 80px;
+}
+
+
+
+
+/* PÁGINAS DE RESULTADOS */
+section#perfil{
+	padding: 250px 0 0 0;
+	text-align: center;
+	background: #f2f3f6 url(../img/quiz-etapa01-fundo.png) 0% 0% no-repeat padding-box;
+	background-size: contain;
+	height: 100vh;
+	position: relative;
+}
+
+section#perfil h2{
+	font-family: 'Mr Eaves XL Bold', sans-serif;
+	font-size: 45px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ff6000;
+	margin: 0 auto 30px auto;
+}
+
+section#perfil p{
+	font-family: 'Mr Eaves XL Regular', sans-serif;
+	font-size: 35px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: center;
+	color: #314267;
+	margin: 0 auto 50px auto;
+	width: 98%;
+}
+
+section#perfil .resultado{
+	text-align: center;
+	margin: 0 auto;
+}
+
+@media screen and (max-width:767px){
+	section.intro .e01-01apresentacao .imagem-intro{
+		display: none;
+	}
+
+	.logo img{
+		position: unset;
+		width: 150px;
+	}
+
+	section.intro h1 {
+		font-size: 35px;
+	}
+
+	section.intro h3 {
+		font-size: 18px;
+	}
+
+	section.intro .landix {
+		margin: 50px 0 100px 0;
+	}
+
+	section.intro .landix img{
+		max-width: 130px;
+	}
+
+	.caixa {
+		padding: 25px 20px;
+		width: 100%;
+		margin: 100px auto;
+	}
+
+	section.intro div.section h4, section.quiz01 div.section h4, section.quiz02 div.section h4, section.quiz03 div.section h4{
+		font-size: 20px !important;
+	}
+
+	.question {
+		margin: 35px auto 30px;
+	}
+
+	.question .buttons a, .button a, section.quiz03 .buttons a {
+		padding: 7px 50px;
+		font-size: 16px;
+		line-height: 1;
+    	height: auto;
+	}
+
+	section.intro div.section,
+	section.quiz01 div.section, 
+	section.quiz03 div.section {
+		text-align: center;
+		margin: 0px auto 15px auto;
+		height: 30px;
+		padding: 4px;
+	}
+
+	section.intro h2{
+		font-size: 25px;
+		margin-bottom: 25px;
+	}
+
+	section.intro p {
+		font-size: 14px;
+	}
+
+	a.style01 {
+		display: block;
+		padding: 13px 40px;
+		text-align: center;
+	}
+
+	.question input,
+	.question select{
+		width: 100%;
+		min-height: auto;
+		font-size: 16px;
+		padding: 8px 20px;
+		outline: none;
+	}
+
+	.question .buttons {
+		min-height: 60px;
+	}
+
+	.question .buttons a.quizvoltar,
+	.question .buttons a.quizproximo {
+		right: 0;
+		left: 0;
+		top: 39px;
+		margin: 0;
+	}
+
+	.question .buttons a.quizproximo {
+		top: 0;
+	}
+
+	.question .buttons a.quizvoltar {
+		top: 40px;
+	}
+
+	.question h4, section.quiz02 h2 {
+		font-size: 20px !important;
+		margin: 30px auto 20px auto;
+	}
+
+	#checkbox-lgpd input#subscribeCheckbox {
+		top: 0px !important;;
+	}
+
+	section .logo-dexer, section .logo-landix {
+		bottom: 100px;
+	}
+
+	section .logo-dexer {
+		left: 20px;
+		text-align: left;
+	}
+
+	section .logo-landix {
+		right: 20px;
+		text-align: right;
+	}
+
+	section .logo-dexer img, section .logo-landix img {
+		width: 52%;
+	}
+
+	section.intro div.section, section.quiz02 div.section {
+		margin: 20px auto;
+		width: 130px;
+		height: 30px;
+	}
+
+	section.quiz02 p {
+		font-size: 16px;
+		width: 95%;
+	}
+
+	section.quiz02 {
+		padding: 10px 0;
+	}
+
+	section.quiz01 {
+		padding: 10px 0 50px 0;
+		background-size: 113%;
+	}
+
+	section#perfil h2 {
+		font-size: 22px;
+	}
+
+	section#perfil p {
+		font-size: 16px;
+		width: 95%;
+	}
+
+	section#perfil .resultado img, .post img{
+		width: 100%;
+	}
+
+	.post,
+	img.ilustracao-resultado{
+		margin: 0 auto 30px auto !important;
+	}
+
+	section#perfil .materiais .post h4 {
+		font-size: 20px;
+	}
+
+	section#perfil .materiais .post.unico h4{
+		text-align: left !important;
+	}
+
+	section#perfil {
+		padding: 150px 0;
+	}
+
+	section.quiz03 .quiz h2 {
+		font-size: 15px;
+		margin: 3px auto;
+	}
+
+	.radio label {
+		font-size: 15px ​!important;
+		margin: 5px auto;
+		padding: 5px 0 5px 30px;
+	}
+
+	.button.center a.quizproximo{
+		display: block;
+	}
+
+	.radio {
+		text-align: left;
+		padding: 0;
+	}
+
+	section.quiz03 .quiz .buttons a {
+		cursor: pointer;
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 50px;
+	}
+
+	section.quiz03 .quiz {
+		height: auto !important;
+	}
+
+	section.quiz03 .quiz h2, .radio label{
+		font-size: 17px;
+	}
+
+	section.quiz03, section.quiz02, section.intronao {
+		padding: 10px 0 75px 0;
+    	background-size: 113%;
+	}
+
+	section#perfil{
+		background-size: 113%;
+	}
+
+	section.quiz02 p {
+		width: 95%;
+		margin: 0 auto 50px auto;
+	}
+
+	section.quiz02 .caixatransparente,
+	.caixatransparente {
+		margin: 200px 0;
+	}
+
+	section.quiz02 h4, section.intro h4{
+		font-size: 32px;
+	}
+
+	.radio input, .radio select {
+		width: 98%;
+		height: 30px;
+	}
+
+	section.quiz03 h2 {
+		margin: 30px auto 20px;
+	}
+
+	section.quiz02 h2, section.quiz03 h2, section.quiz02 p, section.intro p {
+		font-size: 20px;
+	}
+
+	section.quiz03 .caixa {
+		padding: 20px 35px 20px;
+	}
+	
+	section.quiz03 .quiz .button.center {
+		margin-top: 35px;
+	}
+
+	section.intronao h2 {
+		font-size: 32px;
+	}
+
+	section.intronao p {
+		font-size: 20px;
+	}
+
+	section.intronao .button {
+		margin: 50px auto 0;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+	section.intro .e01-01apresentacao .imagem-intro {
+		right: 50px;
+		top: unset;
+		width: 477px;
+		bottom: -441px;
+		display: none;
+	}
+
+	section.intro .e01-01apresentacao .imagem-intro img{
+		width: 100%;
+	}
+
+	.logo img{
+		position: unset;
+		width: 150px;
+	}
+
+	section.intro h1 {
+		font-size: 35px;
+	}
+
+	section.intro h3 {
+		font-size: 18px;
+	}
+
+	section.intro .landix {
+		margin: 50px 0 100px 0;
+	}
+
+	section.intro .landix img{
+		max-width: 130px;
+	}
+
+	.caixa {
+		padding: 25px 20px;
+		width: 100%;
+		margin: 100px auto;
+	}
+
+	section.intro div.section h4, section.quiz01 div.section h4, section.quiz02 div.section h4, section.quiz03 div.section h4{
+		font-size: 20px !important;
+	}
+
+	.question {
+		margin: 50px auto 30px;
+	}
+
+	.question .buttons a, .button a, section.quiz03 .buttons a {
+		padding: 7px 50px;
+		font-size: 16px;
+		line-height: 1;
+    	height: auto;
+	}
+
+	section.intro div.section,
+	section.quiz01 div.section, 
+	section.quiz03 div.section {
+		text-align: center;
+		margin: 10px auto 25px auto;
+		height: 30px;
+		padding: 4px;
+	}
+
+	section.intro h2{
+		font-size: 38px;
+		margin-bottom: 25px;
+	}
+
+	section.intro p {
+		font-size: 14px;
+	}
+
+	a.style01 {
+		display: block;
+		padding: 13px 40px;
+		text-align: center;
+	}
+
+	.question input,
+	.question select{
+		width: 100%;
+		min-height: auto;
+		font-size: 16px;
+		padding: 8px 20px;
+	}
+
+	.question .buttons {
+		min-height: 60px;
+	}
+
+	.question .buttons a.quizvoltar,
+	.question .buttons a.quizproximo {
+		right: 0;
+		left: 0;
+		top: 39px;
+		margin: 0;
+	}
+
+	.question .buttons a.quizproximo {
+		top: 0;
+	}
+
+	.question .buttons a.quizvoltar {
+		top: 40px;
+	}
+
+	.question h4, section.quiz02 h2 {
+		font-size: 20px !important;
+		margin: 40px auto 20px auto;
+	}
+
+	#checkbox-lgpd input#subscribeCheckbox {
+		top: 0px !important;;
+	}
+
+	section .logo-dexer, section .logo-landix {
+		bottom: 60px;
+	}
+
+	section .logo-dexer {
+		left: 20px;
+		text-align: left;
+	}
+
+	section .logo-landix {
+		right: 20px;
+		text-align: right;
+	}
+
+	section .logo-dexer img, section .logo-landix img {
+		width: 52%;
+	}
+
+	section.intro div.section, section.quiz02 div.section {
+		margin: 20px auto;
+		width: 130px;
+		height: 30px;
+	}
+
+	section.quiz02 p {
+		font-size: 16px;
+		width: 95%;
+	}
+
+	section.quiz02 {
+		padding: 10px 0;
+	}
+
+	section.quiz01 {
+		padding: 10px 0 50px 0;
+		background-size: 130%;
+	}
+
+	section#perfil h2 {
+		font-size: 22px;
+	}
+
+	section#perfil p {
+		font-size: 16px;
+		width: 95%;
+	}
+
+	section#perfil {
+		padding: 150px 0;
+	}
+
+	section.quiz03 .quiz h2 {
+		font-size: 15px;
+		margin: 3px auto;
+	}
+
+	.radio label {
+		font-size: 15px ​!important;
+		margin: 5px auto;
+		padding: 5px 0 5px 30px;
+	}
+
+	.button.center a.quizproximo{
+		display: block;
+	}
+
+	section#perfil .resultado .button.center a.quizproximo{
+		display: unset;
+	}
+
+	.radio {
+		text-align: left;
+		padding: 0;
+	}
+
+	section.quiz03 .quiz .buttons a {
+		cursor: pointer;
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 50px;
+	}
+
+	section.quiz03 .quiz {
+		height: auto !important;
+	}
+
+	section.quiz03 .quiz h2, .radio label{
+		font-size: 17px;
+	}
+
+	section.quiz03, section.quiz02, section.intronao {
+		padding: 10px 0 75px 0;
+		background-size: 311% 100%;
+		background-position: 45% 35%;
+	}
+
+	section#perfil{
+		background-size: 311% 100%;
+		background-position: 43% -50px;
+	}
+
+	section.quiz02 p {
+		width: 95%;
+		margin: 0 auto 50px auto;
+	}
+
+	section.quiz02 .caixatransparente,
+	.caixatransparente {
+		margin: 200px 0;
+	}
+
+	section.quiz02 h4, section.intro h4{
+		font-size: 32px;
+	}
+
+	.radio input, .radio select {
+		width: 98%;
+		height: 90px;
+	}
+
+	section.quiz03 h2 {
+		margin: 30px auto 20px;
+	}
+
+	section.quiz02 h2, section.quiz03 h2, section.quiz02 p, section.intro p {
+		font-size: 20px;
+	}
+
+	section.quiz03 .caixa {
+		padding: 20px 35px 20px;
+	}
+	
+	section.quiz03 .quiz .button.center {
+		margin-top: 35px;
+	}
+
+	section.intronao h2 {
+		font-size: 32px;
+	}
+
+	section.intronao p {
+		font-size: 20px;
+	}
+
+	section.intronao .button {
+		margin: 50px auto 0;
+	}
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1600px){
+	section.intro .logo{
+		margin-bottom: 50px;
+	}
+
+	#introparae01{
+		padding: 10px 50px !important;
+	}
+
+	section.intro .logo img{
+		width: 170px;
+	}
+
+	section.intro .landix {
+		margin: 90px 0;
+	}
+
+	section.intro .landix img{
+		width: 150px;
+	}
+
+	section.intro .button {
+		margin: 0 0 50px 0;
+	}
+
+	section.intro h1 {
+		font-size: 40px;
+	}
+
+	section.intro h2 {
+		font-size: 38px !important;
+		width: 80% !important;
+		margin-bottom: 15px;
+	}
+
+	section.intro h3 {
+		font-size: 28px;
+		margin-bottom: 40px;
+	}
+
+	.caixa {
+		padding: 35px 60px 50px;
+	}
+
+	.question .buttons a, .button a, section.quiz03 .buttons a{
+		font-size: 18px;
+		padding: 6px 50px;
+	}
+
+	.question .buttons {
+		min-height: 25px;
+	}
+
+	.question h4 {
+		font-size: 22px;
+		margin: 20px auto;
+	}
+
+	section.quiz01 div.section, section.quiz03 div.section {
+		margin: 0 auto 25px auto;
+	}
+
+	#checkbox-lgpd input#subscribeCheckbox {
+		height: 16px !important;
+		width: 16px !important;
+		top: -12px !important;
+		left: 0 !important;
+	}
+
+	.caixatransparente {
+		margin: 110px 0;
+	}
+
+	section.quiz02 h4, section.intro h4 {
+		font-size: 30px;
+	}
+
+	section.quiz02 h2, section.quiz02 p, section.intro p {
+		font-size: 25px;
+		margin: 0 auto 50px auto;
+	}
+
+	section.quiz03 h2{
+		font-size: 17px;
+		width: 80%;
+		margin: 30px auto 25px;
+	}
+
+	section.quiz03 .radio {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.radio input, .radio select {
+		height: auto;
+	}
+
+	section.quiz02 p, section.intro p {
+		width: 45% !important;
+	}
+
+	section.quiz03 .quiz h2{
+		font-size: 17px;
+		margin-bottom: 20px;
+	}
+
+	.radio label {
+		font-size: 16px !important;
+		margin: 2px auto !important;
+		background: url(../img/radio.svg) 3px 1px no-repeat;
+	}	
+
+	section .logo-dexer img, section .logo-landix img {
+		width: 65%;
+	}
+
+	section.quiz03 .caixa {
+		padding: 30px 35px 25px;
+		margin: 10px auto !important;
+	}
+
+	section.quiz03 .quiz .button.center {
+		margin-top: 20px;
+		min-height: 45px;
+	}
+
+	section.quiz03 .button.center a.quizproximo {
+		padding: 7px;
+		position: absolute;
+    	bottom: 0;
+	}
+
+	section.quiz01 div.section, section.quiz03 div.section {
+		margin: 0 auto 18px auto;
+	}
+
+	section.intronao h2 {
+		font-size: 35px;
+	}
+
+	section.intronao p {
+		font-size: 22px;
+		width: 65%;
+	}
+
+	input:active+label, input:checked+label {
+		background: url(../img/radioselect.svg) -19px -24px no-repeat;
+		background-size: 68px;
+	}
+
+
+
+
+	section#perfil {
+		padding: 150px 0 0 0;
+	}
+
+	section#perfil h2 {
+		font-size: 30px;
+	}
+
+	section#perfil p {
+		font-size: 20px;
+		margin: 0 auto 50px auto;
+		width: 60%;
+	}
+
+	section#perfil .button.center a.quizproximo {
+		padding: 7px 30px;
+	}
+
+	section.intro {
+		padding: 50px 0;
+		height: 100vh;
+		min-height: auto;
+	}
+
+	.question input,
+	.question select{
+		width: 420px;
+		min-height: 20px;
+		font-size: 18px;
+		padding: 0 20px;
+	}
+
+	.question .buttons a {
+		font-size: 18px;
+	}
+
+	section.intro .e01-01apresentacao .imagem-intro {
+		right: -102px;
+    	top: -70px;
+	}
+
+	section.intro .e01-01apresentacao .imagem-intro img{
+		width: 80%;
+	}
+}
+
+/** CHECKBOX LGPD **/
+
+#checkbox-lgpd {
+    position: relative;
+    display: inline-grid;
+    text-align: left;
+	max-width: 500px;
+}
+#checkbox-lgpd input#subscribeCheckbox {
+    height: 20px;
+    width: 20px;
+	top: -20px;
+    position: absolute;
+    margin: 5px;
+	border: 1px solid #000 !important;
+	opacity: 1;
+}
+#checkbox-lgpd label{
+	font-family: 'Mr Eaves XL Regular';
+    position: relative;
+    left: 40px;
+    font-size: 14px;
+    margin: 2px;
+	width: 95%;
+	background: unset !important;
+}
+
+.lgpd{
+	width: 100%;
+    margin: 20px auto 0;
+}
+
+@media screen and (max-width: 990px){
+	.lgpd {
+		width: 100%;
+		margin: 20px auto 0;
+	}
+
+	#checkbox-lgpd label {
+		width: 85%;
+		line-height: 1.2 !important;
+	}
+}

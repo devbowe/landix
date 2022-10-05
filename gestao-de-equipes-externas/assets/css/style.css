@@ -1,0 +1,826 @@
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+div#bricks-component-vOEZgMTpk1VmXRoyybsm1w-wrapper {
+    display: none;
+}
+
+html{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	overflow: hidden;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+.mobile{
+	display: none;
+}
+
+.desktop{
+	display: block;
+}
+
+.loader{
+	display: none;
+}
+  
+:root {
+	--amarelo: #ffba00;
+	--azul: #59e7fe;
+	--branco: #ffffff;
+	--roxo: #784aa7;
+	--cinza: #3b3b3b;
+	--cinza-escuro: #464646;
+	--cinza-medio: #656565;
+	--cinza-claro: #a3a3a3;
+	--laranja: #EB620F;
+}
+
+section.section01{
+	padding: 120px 0;
+    background: #fff url(../img/section01-background.png) 0% 0% no-repeat padding-box;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+section.section01 img.logo {
+    margin-bottom: 40px;
+	max-width: 317px;
+}
+
+section.section01 h1{
+	font-size: 57px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.2;
+	letter-spacing: normal;
+	text-align: left;
+	color: var(--branco);
+	margin-bottom: 45px;
+}
+
+section.section01 p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.6;
+	letter-spacing: normal;
+	text-align: left;
+	color: var(--branco);
+	margin-bottom: 0px;
+	width: 90%;
+}
+
+section.section01 p span{
+	color: #EB620F;
+	font-weight: 500;
+}
+
+section.section01 h4{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: var(--cinza);
+	margin-bottom: 35px;
+}
+
+section.section02 .contato a#cadastrar, a.style02 {
+  	background-color: var(--laranja);
+    font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    text-align: left;
+    color: var(--branco) !important;
+    padding: 15px 60px;
+    border-radius: 32px;
+	text-align: center;
+	transition-duration: .3s;
+	cursor: pointer;
+	width: fit-content;
+}
+
+section.section02 .contato a#cadastrar{
+	margin: 20px 0 0 0;
+}
+
+a.style01 {
+    box-shadow: 15px 15px 40px 0 rgba(255, 106, 0, 0.2);
+    background-color: #1B3B6A;
+    font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+    font-size: 19px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    text-align: left;
+    color: var(--branco);
+    padding: 15px 20px;
+    border-radius: 32px;
+    display: block;
+	text-align: center;
+	transition-duration: .3s;
+	cursor: pointer;
+}
+
+a.style03 {
+	box-shadow: 15px 15px 40px 0 rgba(255, 106, 0, 0.2);
+	background-color: var(--amarelo);
+	color: var(--cinza-escuro) !important;
+    font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+    font-size: 19px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.76px;
+    text-align: left;
+    padding: 15px 20px;
+    border-radius: 32px;
+	text-align: center;
+	transition-duration: .3s;
+	cursor: pointer;
+}
+
+a.style01:hover, a.style02:hover, a.style03:hover{
+	transform: scale(1.05);
+}
+
+section.section02 .contato a#cadastrar:hover{
+	background-color: var(--laranja);
+	text-decoration: none;
+}
+
+section.section01, section.section03, section.section04, footer#rodape {
+    position: relative;
+    z-index: 99;
+}
+
+section.section02{
+	padding: 100px 0 175px 0;
+	background: #F5F5F5;
+	position: relative;
+}
+
+section.section02 .primeiracaixa{
+	width: 100%;
+	margin: 10px auto;
+}
+
+section.section02 .segundacaixa{
+	width: 74%;
+	margin: 5px auto 0;
+}
+
+section.section02 .primeiracaixa .col-md-4.col-12,
+section.section02 .segundacaixa .col-md-6.col-12{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+section.section02 .box {
+    min-height: 199px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 6%);
+	padding: 20px;
+}
+
+section.section02 .box img{
+	margin-bottom: 15px;
+}
+
+section.section02 .box p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 25px;
+	text-align: left;
+	color: #000;
+	margin-bottom: 0;
+}
+
+section.section02 h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: left;
+	color: var(--cinza-escuro);
+	margin-bottom: 50px;
+	width: 86%;
+}
+
+section.section02 h3{
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 25px;
+	text-align: center;
+	color: #eb620f;
+	margin: 20px auto;
+}
+
+section.section02 h4{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 27px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.2;
+	letter-spacing: normal;
+	text-align: center;
+	color: var(--preto);
+	margin-bottom: 35px;
+}
+
+section.section02 .contato{
+	background-color: var(--branco);
+    padding: 35px;
+    width: 400px;
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: 0px 0px 28px rgb(0 0 0 / 20%);
+    position: fixed;
+    top: 3%;
+}
+
+section.section02 .contato a#cadastrar {
+    margin: 20px 0 0 0;
+    display: block;
+    padding: 12px 15px;
+    font-size: 19px;
+    width: 100%;
+}
+
+section.section02 .contato h4{
+	font-size: 17px;
+	margin-bottom: 30px;
+}
+
+section.section02 .contato input,
+section.section02 .contato select{
+	height: 60px;
+	border-radius: 15px;
+	border: solid 1px #F9F9F9;
+	padding: 18px;
+	margin-bottom: 19px;
+	color: var(--cinza-medio) !important;
+	outline: none;
+	background-color: #F9F9F9;
+}
+
+section.section02 .contato input,
+section.section02 .contato select{
+	width: 100%;
+}
+
+#checkbox-lgpd {
+    margin: 10px 0 20px 0;
+    position: relative;
+    display: inline-grid;
+    text-align: left;
+}
+
+#checkbox-lgpd input#subscribeCheckbox {
+	height: 15px;
+    width: 18px;
+    position: absolute;
+    margin: 5px;
+}
+
+#checkbox-lgpd label {
+	position: relative;
+    left: 10px;
+    top: 5px;
+    font-size: 13px !important;
+	margin: 0 15px 10px 0;
+    width: 95%;
+    text-indent: 19px;
+    text-align: justify!important;
+}
+
+section.section02 .contato input#cnpj{
+	width: 100% !important;
+}
+
+ul{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+ul li{
+	margin-bottom: 30px;
+	display: flex;
+}
+
+ul li img{
+	width: 24.9px;
+	height: 19.3px;
+	margin-top: 5px;
+}
+
+ul li p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.3;
+	letter-spacing: normal;
+	text-align: left;
+	color: var(--cinza-medio);
+	margin-left: 15px;
+	margin-bottom: 0px;
+}
+
+section.section02 img.image {
+    width: auto;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section.section03{
+	padding: 100px 0 200px 0;
+    background: transparent url(../img/section03-background.png) no-repeat;
+    background-size: cover;
+	background-position: center;
+    margin-top: -150px;
+}
+
+section.section03 .titulo {
+    margin-bottom: 40px;
+    width: 390px;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+section.section03 .box{
+    min-height: 180px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 6%);
+    margin: 0 0 10px 0;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+section.section03 .box img{
+	margin-bottom: 10px;
+}
+
+section.section03 .box p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+	text-align: center;
+	color: #000;
+	margin-bottom: 0;
+}
+
+section.section03 h4{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: left;
+	color: var(--cinza-escuro);
+	width: 75%;
+    margin: 0 auto;
+}
+
+section.section03 h3 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 45px;
+    text-align: center;
+    color: #000;
+	margin: 20px auto 10px;
+}
+
+section.section03 h3 span{
+	color: var(--laranja);
+}
+
+section.section03 a.style02{
+	font-size: 16px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 13px 60px;
+}
+
+section.section04{
+	padding: 200px 0 140px 0;
+    background: transparent url(../img/section04-background.png) no-repeat;
+    background-size: 100%;
+    margin-top: -150px;
+}
+
+section.section04 .titulo {
+    margin: 0 auto 35px auto;
+    width: 100%;
+}
+
+section.section04 p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 40px;
+	text-align: center;
+	color: var(--branco);
+	margin-bottom: 50px;
+}
+
+section.section04 a.style01{
+	width: fit-content;
+	margin: 0 auto;
+	padding: 14px 110px;
+}
+
+#rodape{
+	padding: 20px 0;
+	margin: 0 auto;
+	text-align: center;
+	background: #fff;
+}
+
+@media screen and (max-width: 1366px){
+	section.section01 img.logo {
+		margin-bottom: 50px !important;
+	}
+
+	section.section01 {
+		padding: 25px 0 120px 0;
+	}
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1500px){
+
+	section.section01{
+		background-size: cover;
+	}
+
+	section.section01 img.logo {
+		width: 200px;
+	}
+
+
+
+	section.section02 .contato a#cadastrar, a.style01 {
+		font-size: 15px;
+	}
+
+	section.section01 h1 {
+		font-size: 35px;
+		width: 90%;
+	}
+
+	section.section01 p {
+		font-size: 17px;
+		width: 60%;
+	}
+
+	ul li p {
+		font-size: 18px;
+	}
+
+	a.style01, a.style02, a.style03 {
+		font-size: 15px;
+	}
+
+	section.section02 h4 {
+		font-size: 24px;
+		margin-bottom: 35px;
+		margin-top: 10px;
+	}
+
+	section.section02 h3 {
+		font-size: 25px;
+	}
+
+	section.section02 .contato input, section.section02 .contato select {
+		height: 45px;
+		border-radius: 15px;
+		padding: 10px 15px;
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+
+	section.section10 p {
+		font-size: 18px;
+	}
+
+	.redessociais a img{
+		max-height: 20px;
+	}
+
+	section.section04 {
+		padding: 125px 0 100px 0;
+		background-size: cover;
+	}
+
+	section.section04 p {
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 18px;
+	}
+}
+
+
+@media screen and (max-width: 1100px){
+
+	section.section01{
+		text-align: center;
+	}
+
+	section.section01 img.logo{
+		width: 200px;
+	}
+
+	section.section01 h1 {
+		font-size: 25px;
+		width: 100%;
+		text-align: center;
+	}
+
+	section.section01 {
+		padding: 50px 0 50px 0;
+		background-size: cover;
+		background-position-x: 25%;
+	}
+
+	section.section01 p {
+		font-size: 16px;
+		text-align: center;
+		width: 100%;
+	}
+
+	section.section01 h4 {
+		font-size: 17px;
+	}
+
+	section.section02 .contato {
+		background-color: var(--branco);
+		padding: 20px 15px;
+		border-radius: 15px;
+		margin-top: 50px;
+		position: unset;
+		top: unset;
+		width: 100%;
+	}
+
+	section.section02 .primeiracaixa,
+	section.section02 .segundacaixa {
+		width: 80%;
+		margin: 1px auto;
+	}
+
+	section.section02 .primeiracaixa .col-md-4.col-12, section.section02 .segundacaixa .col-md-6.col-12 {
+		padding-left: 5px;
+		padding-right: 5px;
+		margin: 5px 0;
+	}
+
+	section.section02 .contato a#cadastrar, a.style01 {
+		box-shadow: 6px 11px 11px 0 rgba(255, 106, 0, 0.1);
+	}
+
+	section.section02 .contato input, section.section02 .contato select {
+		height: 50px;
+		padding: 5px 15px;
+	}
+
+	section.section02 .contato input:nth-child(2), 
+	section.section02 .contato input:nth-child(3), 
+	section.section02 .contato input:nth-child(5), 
+	section.section02 .contato select{
+		width: 100%;
+		margin: 0 auto 19px auto;
+	}
+
+	section.section02 .contato input:nth-child(3), 
+	section.section02 .contato input:nth-child(5), 
+	section.section02 .contato select#atendimentos{
+		margin-left: unset;
+	}
+
+	section.section02 .contato a#cadastrar, a.style01 {
+		font-size: 14px;
+	}
+
+	section.section02 {
+		padding: 50px 0;
+	}
+
+	section.section02 h2 {
+		font-size: 22px;
+		width: 100%;
+		text-align: center;
+	}
+
+	section.section03 {
+		padding: 100px 0;
+		background: #fff;
+		margin-top: 0;
+	}
+
+	section.section03 .box {
+		margin: 0 0 15px 0;
+		text-align: center;
+	}
+
+	section.section03 .row.primeiracaixa .col-md-6.col-6.d-flex.flex-column.justify-content-center{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	img.titulo{
+		width: 100% !important;
+	}
+
+	section.section02 h4 {
+		font-size: 20px;
+		margin: 15px auto 30px;
+	}
+
+	section.section02 h3 {
+		font-size: 23px;
+		margin: 12px auto;
+	}
+
+	section.section03 h3 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	section.section04 {
+		padding: 75px 0;
+		background: var(--laranja);
+		margin-top: 0;
+	}
+
+	section.section04 p {
+		font-size: 16px;
+		line-height: 28px;
+		margin-bottom: 20px;
+	}
+
+	a.style01, a.style02, a.style03{
+		font-size: 14px;
+		margin: 0 auto;
+	}
+
+	section.section02 img.image{
+		display: none;
+	}
+
+	section.section03 img.image, 
+	section.section04 img.ferramentas,
+	section.section05 img{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	section.section03 h4 {
+		font-size: 22px;
+		text-align: center;
+		width: 100%;
+		margin: 40px auto 0 auto;
+	}
+
+	section.section04 h3, 
+	section.section05 h3 {
+		font-size: 22px;
+		text-align: center;
+	}
+
+	section.section05 p {
+		font-size: 16px;
+		width: 100%;
+	}
+
+	section.section05 img{
+		margin: 40px auto 0 auto;
+	}
+
+	section.section06 h2 {
+		font-size: 22px;
+		width: 100%;
+	}
+
+	section.section06 h3{
+		margin: 50px auto;
+	}
+
+	img.logorodape {
+		width: 195px;
+	}
+
+	#rodape .redessociais a {
+		margin: 0px 15px;
+		text-decoration: none;
+		transition-duration: .3s;
+	}
+
+	#rodape .redessociais a img{
+		max-height: 20px;
+	}
+}
+
+@media (min-width: 1600px){
+	.container {
+		max-width: 1240px;
+	}
+}
+
+@media screen and (min-width: 767px) and (max-width: 1279px){
+	section.section02 .box p br{
+		display: none;
+	}
+
+	section.section02 .primeiracaixa, section.section02 .segundacaixa {
+		width: 100% !important;
+	}
+
+}
+
+@media screen and (min-width: 200px) and (max-width: 1279px){
+	.mobile, a.mobile{
+		display: block !important;
+	}
+
+	.desktop, a.desktop{
+		display: none !important;
+	}
+}
+
+@media screen and (min-width: 1280px){
+	.mobile, a.mobile{
+		display: none !important;
+	}
+
+	.desktop, a.desktop{
+		display: block !important;
+	}
+}
+
+@media screen and (min-width: 1601px)  and (max-width: 1800px){
+	section.section03 {
+		padding: 150px 0 250px 0;
+		background-size: 100%;
+	}
+}
+
+@media screen and (min-width: 1801px)  and (max-width: 2000px){
+	section.section03 {
+		padding: 200px 0 250px 0;
+		background-size: 100%;
+	}
+}

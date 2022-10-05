@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge; text/html">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta name="description" content="Confira Seu Resultado do Diagnóstico de Trade Marketing e Saiba Como Sua Empresa Pode Ser Eficiente de Verdade para Aumentar as Vendas.">
+  		<meta name="keywords" content="trade marketing, landix">	
+		
+		<title>Aqui está o diagnóstico de Trade Marketing | Landix</title>
+		
+		<!-- Favicon -->
+        <link rel="shortcut icon" href="assets/ico/favicon.jpg">
+
+        <!-- FONTES -->
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+
+		<!-- ESTILOS -->
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<!-- OUTROS -->
+		<link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+		<link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+		<link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />	 
+    </head>
+    <body>	
+		<section id="perfil">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <h2>
+                            Obrigado pela participação, <span class="nome"></span>.<br/>
+                        </h2>
+                        <div class="resultado" data-aos="fade-in" data-aos-duration="1000" class="aos-init aos-animate">
+                            <p>
+                                Você precisa de apenas alguns ajustes para ter uma equipe de 
+								Trade Marketing pronta para gerar ainda mais negócios.
+                                <br/><br/>
+								A tecnologia de Dexer pode fazer toda a diferença! O Dexer é 
+								uma solução comercial criada para gestão de equipes externas. 
+								Com um aplicativo moderno e intuitivo, você conecta supervisores 
+								e back-offices aos promotores em campo. 
+								<br/><br/>
+								Controle as atividades executadas nos Pontos de Vendas (PDVs) e 
+								reúna dados para análises e desenhos de novas estratégicas. 
+                            </p>
+							<div class="button center">
+                                <a href="https://conteudos.landix.com.br/software-de-controle-de-visitas" class="quizproximo" id="intronaoparaetapa04" target="_blank">Clique aqui e solicite uma demonstração gratuita.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</section>
+		<!-- INTEGRAÇÃO RD STATION -->
+		<script type ='text/javascript' src="https://d335luupugsy2.cloudfront.net/js/integration/stable/rd-js-integration.min.js"></script>
+
+		<!-- Javascript -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+		<script src="assets/js/sweetalert2.js"></script>
+		<script src="assets/js/mask.js"></script>
+		<script src="assets/js/scripts.js"></script>
+		
+		<script>
+            var nomeCliente = sessionStorage.getItem("nome");
+            console.log(nomeCliente);
+            $('span.nome').html(nomeCliente);
+			AOS.init({
+				disable: function() {
+					var maxWidth = 800;
+					return window.innerWidth < maxWidth;
+				}
+			});    
+		</script>
+    </body>
+
+</html>
